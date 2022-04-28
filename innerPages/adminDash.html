@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="../assets/css/admDash.css">
     <title>Sistem ADM</title>
 </head>
-<body>
+<body onload="realtimeClock(), diaSemana(), mesAno(),diaAno(), anoReal()">
     <div class="top-bar">
         <div class="logo">
             <img src="../assets/image/PikPng.com_duke-logo-png_1371967.png" alt="">
             <h2>Escola Solo Guy</h2>
         </div>
         <span>Olá Fulano</span>
+        <div class="relogio">
+            <div id="relogio"></div>
+            <div id="dia"></div>
+            <div class="dateContainer">
+            <div id="diaAno"></div>
+            <div id="mes"></div>
+            <div id="ano"></div>
+        </div>
+    </div>
     </div>
     <div class="filtro">
         <form action="">
@@ -42,75 +51,122 @@
                     <td>9° Ano</td>
                     <td>10</td>
                     <td>218901</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Zaid Salas</td>
                     <td>9° Ano</td>
                     <td>19</td>
                     <td>204160</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Jaelynn Grant</td>
                     <td>9° Ano</td>
                     <td>17</td>
                     <td>263472</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Leland Garrett</td>
                     <td>9° Ano</td>
                     <td>9</td>
                     <td>201789</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Madden Mclean</td>
                     <td>9° Ano</td>
                     <td>5</td>
                     <td>290272</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Emilia Liu</td>
                     <td>9° Ano</td>
                     <td>20</td>
                     <td>244984</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Aubree Quinn</td>
                     <td>9° Ano</td>
                     <td>0</td>
                     <td>237615</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Jocelynn Shea</td>
                     <td>9° Ano</td>
                     <td>10</td>
                     <td>253849</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Carissa Bishop</td>
                     <td>9° Ano</td>
                     <td>11</td>
                     <td>255777</td>
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tr>
                     <td>Aniya Bray</td>
                     <td>9° Ano</td>
                     <td>12</td>
                     <td>275429</td> 
-                    <td><a class="editar" href=""><button class="ver-button">Editar</button></a></td>
+                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
                 </tr>
                 <tbody>
             </table>
         </div>
     </div>
-    <div class="menu"></div>
+    <div class="menu">
+        <ul>
+            <li><button id="myBtn" class="menu-button">Cadastrar Aluno</button></li>
+            <li><button class="menu-button">Cadastrar Professor</button></li>
+            <li><button class="menu-button">Cadastrar Usuário</button></li>
+        </ul>
+        <a href="../index.html"><button class="menu-button sair">SAIR</button></a>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>CADASTRO DE ALUNOS</h2>
+                <span class="close">&times;</span>
+            </div>
+          <div class="cadastro-aluno">
+              <form action="" class="cadastro-aluno-form">
+                <label for="aluno">
+                    Nome do Aluno:
+                    <input type="text" placeholder="Nome do Aluno">
+                </label>
+                <label for="aluno">
+                    E-mail do Aluno:
+                    <input type="email" placeholder="email">
+                </label>
+                <label for="aluno">
+                    Nome do Responsável:
+                    <input type="text"placeholder="Responsável pelo aluno">
+                </label>
+                <label for="aluno">
+                    Ano Letivo:
+                    <input type="number" value="3" placeholder="Ano Escolar">
+                </label>
+                <label for="aluno">
+                    E-mail do Responsável:
+                    <input type="email" placeholder="email responsavel">
+                </label>
+                <label for="aluno">
+                    Nome do Aluno:
+                    <input type="text">
+                </label>
+                  <button>CADASTRAR</button>
+              </form>
+          </div>
+        </div>
+      
+      </div>
+      <script src="../assets/js/main.js"></script>
+      <script src="../assets/js/relogio.js"></script>
 </body>
 </html>

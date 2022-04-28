@@ -83,3 +83,10 @@ button:hover{
     text-decoration: none;
     color: gray;
 }
+.user-test{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin: 50px auto auto auto;
+    flex-flow: column;
+}

@@ -54,3 +54,28 @@ body{
 .logo img {
 	height: 80px;
 }
+.center-content {
+  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.metodo,.professores, .prize{
+  background-size: cover;
+  background-color: #cccccc;
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  color: white;
+  display: flex;
+    justify-content: center;
+}
+.metodo{
+  background-image: url("../image/pexels-pixabay-301926.jpg");
+}
+.professores{
+  background-image: url("../image/pexels-rodnae-productions-8363021.jpg");
+}
+.prize{
+  background-image: url("../image/pexels-rodnae-productions-7005693.jpg");
+}

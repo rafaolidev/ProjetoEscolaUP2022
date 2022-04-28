@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/perfilAluno.css">
+    <title>Perfil Fulano</title>
+</head>
+<body onload="realtimeClock(), diaSemana(), mesAno(),diaAno(), anoReal()">
+    <div class="top-bar">
+        <div class="logo">
+            <img src="../assets/image/PikPng.com_duke-logo-png_1371967.png" alt="">
+            <h2>Escola Solo Guy</h2>
+        </div>
+        <span>Olá Fulano</span>
+    </div>
+    <div class="dados-estudante">
+        <div class="cadastro-aluno">
+            <form action="" class="cadastro-aluno-form">
+              <label for="aluno">
+                  Nome do Aluno:
+                  <input type="text" placeholder="Felipe Pererira">
+              </label>
+              <label for="aluno">
+                  E-mail do Aluno:
+                  <input type="email" placeholder="felipe@email.com">
+              </label>
+              <label for="aluno">
+                  Nome do Responsável:
+                  <input type="text"placeholder="Samara Ferreira">
+              </label>
+              <label for="aluno">
+                  Ano Letivo:
+                  <input type="number" value="3" placeholder="Ano Escolar">
+              </label>
+              <label for="aluno">
+                  E-mail do Responsável:
+                  <input type="email" placeholder="Samara@email.com">
+              </label>
+                <button>EDITAR</button>
+            </form>
+        </div>
+    </div>
+    <div class="alunos-tables">
+        <h2>Materias em Cruso</h2>
+        <div class="table-wrapper">
+            <table class="fl-table">
+                <thead>
+                <tr>
+                    <th>Matéria</th>
+                    <th>Avaliação 1</th>
+                    <th>Avaliação 2</th>
+                    <th>Faltas</th>
+                    <th>Situação</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Matemática</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tr>
+                    <td>Fisíca</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tr>
+                    <td>Quimíca</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tr>
+                    <td>Filosofia</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tbody>
+            </table>
+        </div>
+    </div>
+    <div class="alunos-tables">
+        <h2>Atividades Extras</h2>
+        <div class="table-wrapper">
+            <table class="fl-table">
+                <thead>
+                <tr>
+                    <th>Atividade</th>
+                    <th>Professor Responsável</th>
+                    <th>Avaliação</th>
+                    <th>Situação</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Aulas de Meditação</td>
+                    <td>Servero Snape</td>
+                    <td>0</td>
+                    <td><span style="color: red;">Reprovado</span></td>
+                </tr>
+                <tr>
+                    <td>Pesquisa em museu</td>
+                    <td>Minerva mcgonagall</td>
+                    <td>10</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tr>
+                    <td>Visita ao Zoologico</td>
+                    <td>Rubeus Hagrid</td>
+                    <td>10</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tr>
+                    <td>Visita ao serpentário</td>
+                    <td>horácio slughorn</td>
+                    <td>10</td>
+                    <td><span style="color: green;">Aprovado</span></td>
+                </tr>
+                <tbody>
+            </table>
+        </div>
+    </div>
+    <div class="alunos-tables">
+        <h2>Registro Financeiro</h2>
+        <div class="table-wrapper">
+            <table class="fl-table">
+                <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Nr. Título</th>
+                    <th>Val. Bruto</th>
+                    <th>Desconto</th>
+                    <th>Juros</th>
+                    <th>Val. Líquido</th>
+                    <th>Vencimento</th>
+                    <th>Situação</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>mensalidade</td>
+                    <td>233306/06</td>
+                    <td>R$ 1.499,73</td>
+                    <td>R$ 691,22</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 808,51</td>
+                    <td>	10/10/1010</td>
+                    <td><span style="color: red;">Aberto</span></td>
+                </tr>
+                <tr>
+                    <td>mensalidade</td>
+                    <td>233306/06</td>
+                    <td>R$ 1.499,73</td>
+                    <td>R$ 691,22</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 808,51</td>
+                    <td>	10/10/1010</td>
+                    <td><span style="color: red;">Aberto</span></td>
+                </tr>
+                <tr>
+                    <td>mensalidade</td>
+                    <td>233306/06</td>
+                    <td>R$ 1.499,73</td>
+                    <td>R$ 691,22</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 808,51</td>
+                    <td>	10/10/1010</td>
+                    <td><span style="color: red;">Aberto</span></td>
+                </tr>
+                <tr>
+                    <td>mensalidade</td>
+                    <td>233306/06</td>
+                    <td>R$ 1.499,73</td>
+                    <td>R$ 691,22</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 808,51</td>
+                    <td>	10/10/1010</td>
+                    <td><span style="color: red;">Aberto</span></td>
+                </tr>
+                <tbody>
+            </table>
+        </div>
+    </div>
+    <div class="menu">
+        <a href="adminDash.html"><button class="menu-button sair">VOTLAR</button></a>
+    </div>
+    <script src="../assets/js/relogio.js"></script>
+</body>
+</html>
