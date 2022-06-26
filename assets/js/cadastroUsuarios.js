@@ -23,7 +23,7 @@ function cadastraUsuario() {
     let nome = document.getElementById("nome-user").value;
     let email = document.getElementById("email-user").value;
     let senha = document.getElementById("senha-user").value;
-    let tipo = document.getElementById("tipo").valuetext.toLowerCase();
+    let tipo = document.getElementById("tipo").value.toLowerCase();
     let id_professor = document.getElementById("id_professor").value;
   
     console.log(nome)
@@ -40,4 +40,5 @@ function cadastraUsuario() {
     }
 
     fazPost(url, body)
+
 }

@@ -3,7 +3,7 @@ function mainAdm() {
     const setUserName = document.getElementById('userName');
     let myName = sessionStorage.getItem('name');
     let myType = sessionStorage.getItem('type');
-    setUserName.textContent = myName;
+    setUserName.textContent ="Olá "+ myName;
     if (myType != 'admin') {
         window.location.replace("../innerPages/login.html");
     }
