@@ -28,7 +28,10 @@ function login() {
         if (user.type == "admin") {
             window.location.replace("../innerPages/adminDash.html");
         }if (user.type == "professor") {
-            console.log('eh professor')
+            error.textContent = 'Querido professor o sistema para professores está temporariamente fora de serviço';
+        setTimeout(() => {
+            error.textContent = '';
+          }, "4000");
         }
     }else{
         const error = document.getElementById('error');
