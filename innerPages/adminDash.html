@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <a href=""></a>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
             <img src="../assets/image/PikPng.com_duke-logo-png_1371967.png" alt="">
             <h2>Escola Solo Guy</h2>
         </div>
-        <span>Olá Fulano</span>
+        <span id="userName">Olá Fulano</span>
         <div class="relogio">
             <div id="relogio"></div>
             <div id="dia"></div>
@@ -24,110 +25,82 @@
         </div>
     </div>
     </div>
-    <div class="filtro">
-        <form action="">
-            <label for="Ano Escolar">
-                <input type="text" placeholder="Ano Escolar">
-            </label>
-            <button>Filtrar</button>
-        </form>
-    </div>
+
+    <!-- TABELA DE ALUNOS  -->
     <div class="alunos-tables">
         <h2>Alunos Matriculados</h2>
         <div class="table-wrapper">
-            <table class="fl-table">
+            <table class="fl-table" id="tabela-alunos">
                 <thead>
                 <tr>
+                    <th>Numero Matricula</th>
                     <th>Aluno</th>
-                    <th>Ano Letivo</th>
-                    <th>Frequincia total</th>
-                    <th>Numero da Matricula</th>
-                    <th>Ação</th>
+                    <th>Turma</th>
+                    <th>Email Aluno</th>
+                    <th>Responsável</th>
+                    <th>Email Responsável</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>Marcos Paulo</td>
-                    <td>9° Ano</td>
-                    <td>10</td>
-                    <td>218901</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Zaid Salas</td>
-                    <td>9° Ano</td>
-                    <td>19</td>
-                    <td>204160</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Jaelynn Grant</td>
-                    <td>9° Ano</td>
-                    <td>17</td>
-                    <td>263472</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Leland Garrett</td>
-                    <td>9° Ano</td>
-                    <td>9</td>
-                    <td>201789</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Madden Mclean</td>
-                    <td>9° Ano</td>
-                    <td>5</td>
-                    <td>290272</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Emilia Liu</td>
-                    <td>9° Ano</td>
-                    <td>20</td>
-                    <td>244984</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Aubree Quinn</td>
-                    <td>9° Ano</td>
-                    <td>0</td>
-                    <td>237615</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Jocelynn Shea</td>
-                    <td>9° Ano</td>
-                    <td>10</td>
-                    <td>253849</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Carissa Bishop</td>
-                    <td>9° Ano</td>
-                    <td>11</td>
-                    <td>255777</td>
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
-                <tr>
-                    <td>Aniya Bray</td>
-                    <td>9° Ano</td>
-                    <td>12</td>
-                    <td>275429</td> 
-                    <td><a class="editar" href="perfilAluno.html"><button class="ver-button">Editar</button></a></td>
-                </tr>
                 <tbody>
             </table>
         </div>
     </div>
+    <!-- TABELA DE FIM  -->
+
+    <!-- TABELA DE PROFESSORES  -->
+    <div class="alunos-tables">
+        <h2>Professores Ativos</h2>
+        <div class="table-wrapper">
+            <table class="fl-table" id="tabela-professores">
+                <thead>
+                <tr>
+                    <th>ID do funcionário</th>
+                    <th>Professor</th>
+                    <th>Turma</th>
+                    <th>Email professor</th>
+                    <th>Matéria</th>
+                    <th>Ação</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tbody>
+            </table>
+        </div>
+    </div>
+    <!-- TABELA DE PROFESSORES FIM  -->
+
+    <!-- TABELA DE USUÁRIOS  -->
+    <div class="alunos-tables">
+        <h2>USUÁRIOS DO SISTEMA</h2>
+        <div class="table-wrapper">
+            <table class="fl-table" id="tabela-usuarios">
+                <thead>
+                <tr>
+                    <th>ID do funcionário</th>
+                    <th>Nome</th>
+                    <th>email</th>
+                    <th>ID Professor</th>
+                    <th>Tipo de Usuário</th>
+                    <th>Ação</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tbody>
+            </table>
+        </div>
+    </div>
+    <!-- TABELA DE USUÁRIOS FIM  -->
     <div class="menu">
         <ul>
             <li><button id="myBtn" class="menu-button">Cadastrar Aluno</button></li>
-            <li><button class="menu-button">Cadastrar Professor</button></li>
-            <li><button class="menu-button">Cadastrar Usuário</button></li>
+            <li><button id="myBtn-professor" class="menu-button">Cadastrar Professor</button></li>
+            <li><button id="myBtn-usuario" class="menu-button">Cadastrar Usuário</button></li>
         </ul>
         <a href="../index.html"><button class="menu-button sair">SAIR</button></a>
     </div>
+<!-- MODAL ALUNO INICIO -->
+
     <div id="myModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -135,38 +108,115 @@
                 <span class="close">&times;</span>
             </div>
           <div class="cadastro-aluno">
-              <form action="" class="cadastro-aluno-form">
+            <script src="../assets/js/cadastroAluno.js"></script>
+              <form onsubmit="cadastraUsuario()"  class="cadastro-aluno-form">
                 <label for="aluno">
                     Nome do Aluno:
-                    <input type="text" placeholder="Nome do Aluno">
+                    <input type="text" id="nome" placeholder="Nome do Aluno" required>
                 </label>
                 <label for="aluno">
                     E-mail do Aluno:
-                    <input type="email" placeholder="email">
+                    <input type="email" id="email" placeholder="email"required>
                 </label>
                 <label for="aluno">
                     Nome do Responsável:
-                    <input type="text"placeholder="Responsável pelo aluno">
+                    <input type="text" id="nomeResponsavel" placeholder="Responsável pelo aluno"required>
                 </label>
                 <label for="aluno">
-                    Ano Letivo:
-                    <input type="number" value="3" placeholder="Ano Escolar">
+                    Turma
+                    <input type="text" id="turma"  placeholder="Turma"required>
                 </label>
                 <label for="aluno">
                     E-mail do Responsável:
-                    <input type="email" placeholder="email responsavel">
+                    <input type="email" id="emailResponsavel" placeholder="email responsavel"required>
                 </label>
-                <label for="aluno">
-                    Nome do Aluno:
-                    <input type="text">
-                </label>
-                  <button>CADASTRAR</button>
+                  <button type="submit">CADASTRAR</button>
               </form>
           </div>
         </div>
-      
-      </div>
-      <script src="../assets/js/main.js"></script>
-      <script src="../assets/js/relogio.js"></script>
+    </div>
+
+<!-- MODAL ALUNO FIM -->
+
+<!-- MODAL PROFESSOR INICIO -->
+
+    <div id="myModal-professor" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>CADASTRO DE PROFESSORES</h2>
+                <span class="close-professor">&times;</span>
+            </div>
+          <div class="cadastro-aluno">
+            <script src="../assets/js/cadastroProfessor.js"></script>
+              <form onsubmit="cadastraProfessor()" class="cadastro-aluno-form">
+                <label for="aluno">
+                    Nome do Professor:
+                    <input type="text" id="nome-professor" placeholder="Nome do Professor" required>
+                </label>
+                <label for="aluno">
+                    E-mail do Professor:
+                    <input type="email" id="email-professor" placeholder="email"required>
+                </label>
+                <label for="aluno">
+                    Senha Padrão:
+                    <input type="password" id="senha" placeholder="Senha Primeiro Acesso" required>
+                </label>
+                <label for="aluno">
+                    Matéria
+                    <input type="text" id="materia"  placeholder="Matéria do Professor" required>
+                </label>
+                <label for="aluno">
+                    Turma:
+                    <input type="text" id="turma-professor" placeholder="email responsavel" required>
+                </label>
+                  <button type="submit">CADASTRAR</button>
+              </form>
+          </div>
+        </div>
+    </div>
+
+<!-- MODAL PROFESSOR FINAL -->
+
+<!-- MODAL USUÁRIO COMEÇO -->
+
+    <div id="myModal-usuario" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>CADASTRO DE USUÁRIOS</h2>
+                <span class="close-usuario">&times;</span>
+            </div>
+        <div class="cadastro-aluno">
+            <script src="../assets/js/cadastroUsuarios.js"></script>
+            <form onsubmit="cadastraUsuario()" class="cadastro-aluno-form">
+                <label for="aluno">
+                    Nome do Usuário:
+                    <input type="text" id="nome-user" placeholder="Nome do Usuário" required>
+                </label>
+                <label for="aluno">
+                    E-mail do Usuário:
+                    <input type="email" id="email-user" placeholder="email"required>
+                </label>
+                <label for="aluno">
+                    Senha Padrão:
+                    <input type="password" id="senha-user" placeholder="Senha Primeiro Acesso" required>
+                </label>
+                <label for="aluno">
+                    Tipo de Usuário
+                    <input type="text" id="tipo"  placeholder="EX: professor, aluno..." required>
+                </label>
+                <label for="aluno">
+                    Codígo de Professor:
+                    <input class="danger" type="text" id="id_professor" placeholder="APENAS SE O USUÁRIO FOR PROFESSOR">
+                </label>
+                <button type="submit">CADASTRAR</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+<!-- MODAL USUÁRIO FINAL -->
+            <script src="../assets/js/main.js"></script>
+            <script src="../assets/js/relogio.js"></script>
 </body>
+<script src="../assets/js/adminDash.js" defer></script>
 </html>

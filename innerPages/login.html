@@ -16,16 +16,17 @@
                 <span>Escola Solo Guy</span>
             </div>
         </div>
-        <form action="">
+        <script src="../assets/js/apiRequests.js"></script>
+        <form onsubmit="login()">
         <label for="">
             Usuário:
-            <input type="email" name="" id="" placeholder="voce@emai.com" required>
+            <input type="email" name="" id="email" placeholder="voce@emai.com" required>
         </label>
         <label for="">
             Senha: 
-            <input type="password" name="" id="" placeholder="Senha" required>
+            <input type="password" name="" id="senha" placeholder="Senha" required>
         </label>
-        <button>LOGIN</button>
+        <button type="submit">LOGIN</button>
         <a href="../index.html">VOLTAR</a>
         </form>
         <div class="options-container">
@@ -34,8 +35,11 @@
         </div>
     </div>
     <div class="user-test">
+        <div id="error"></div>
+        <!--
         <a href="adminDash.html">Teste de inner page ADM</a>
         <a href="responsavelDash.html">Teste de inner page responsavel</a>
+        -->
     </div>
     
 </body>
