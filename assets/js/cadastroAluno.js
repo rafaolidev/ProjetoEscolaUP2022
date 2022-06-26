@@ -17,18 +17,15 @@ function fazPost(url, body) {
 }
 
 //pega os dados do form para chamar a função de cadastro
-function cadastraUsuario() {
+function cadastraAluno() {
     event.preventDefault()
     let url = "https://apitopicos2022.herokuapp.com/alunos"
     let nome = document.getElementById("nome").value
     let email = document.getElementById("email").value
+    let nomeResponsavel = document.getElementById("nomeResponsavel").value
+    let turma = document.getElementById("turma").value
+    let emailResponsavel = document.getElementById("emailResponsavel").value
   
-    let nomeResponsavel = document.getElementById("email").value
-    let turma = document.getElementById("email").value
-    let emailResponsavel = document.getElementById("email").value
-  
-    console.log(nome)
-    console.log(email)
 
     body = {
 

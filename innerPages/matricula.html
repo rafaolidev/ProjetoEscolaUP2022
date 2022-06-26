@@ -16,23 +16,25 @@
                 <span>Escola Solo Guy</span>
             </div>
         </div>
-        <form action="">
+        <script src="../assets/js/cadastroAluno.js"></script>
+        <form onsubmit="cadastraAluno()">
         <label for="">
             Nome do Responsável:
-            <input type="text" name="" id="" placeholder="Responsável" required>
+            <input type="text" name="" id="nomeResponsavel" placeholder="Responsável" required>
         </label>
         <label for="">
             E-mail do Responsável:
-            <input type="email" name="" id="" placeholder="E-mail do Responsável" required>
+            <input type="email" name="" id="emailResponsavel" placeholder="E-mail do Responsável" required>
         </label>
         <label for="">
             Nome do Aluno: 
-            <input type="text" name="" id="" placeholder="Nome do Aluno" required>
+            <input type="text" name="" id="nome" placeholder="Nome do Aluno" required>
         </label>
         <label for="">
-            Ano Escolar desejado:
-            <input type="number" name="" id="" placeholder="Ano Escolar" required value="2">
+            Email Aluno:
+            <input type="email" name="" id="email" placeholder="E-mail Aluno" required >
         </label>
+        <input type="hidden" name="" id="turma" value="1">
         <button>CADASTRAR</button>
         <a href="../index.html">VOLTAR</a>
         </form>
